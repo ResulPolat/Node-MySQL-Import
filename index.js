@@ -45,7 +45,7 @@ module.exports = function(hostname, port, username, password, database, file ){
         console.log('drop database')
 
         return new Promise(function(resolve, reject){
-            // WE USE DIRECT QUERY BECAUSE MYSQL MODULE DOES NOT PROPERLY HANDLE QOUTATION MARKS WITH THIS TYPE OF QUERY
+            // WE USE DIRECT QUERY BECAUSE THE MYSQL MODULE DOES NOT PROPERLY HANDLE QUOTATION MARKS WITH THIS TYPE OF QUERY
             this.pool.query('DROP DATABASE IF EXISTS ' + database, function(error, result){
                 console.dir(result)
                 if(error)
@@ -64,7 +64,7 @@ module.exports = function(hostname, port, username, password, database, file ){
     this.createDatabaseIfDoesNotExist = function(){
         console.log('create database')
         return new Promise(function (resolve, reject) {
-            // WE USE DIRECT QUERY BECAUSE MYSQL MODULE DOES NOT PROPERLY HANDLE QOUTATION MARKS
+            // WE USE DIRECT QUERY BECAUSE MYSQL MODULE DOES NOT PROPERLY HANDLE QUOTATION MARKS
             this.pool.query('CREATE DATABASE IF NOT EXISTS ' + database, function (error, result) {
                 console.dir(result)
                 if (error) {
