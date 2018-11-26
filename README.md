@@ -12,10 +12,15 @@ Unlike some other libraries that have been seen out there in the wild, this modu
 - linux (uses 'mysql' command)
 - mac (uses 'mysql' command)
 
+### HOW TO INSTALL
+
+```
+npm i node-mysql-import
+```
+
 ### EXAMPLE USAGE
 ```javascript
 const MySQLImporter = require('./index.js');
-
 
 // setup
 var test = new MySQLImporter('localhost', 3306, 'root', 'password', 'database', 'test.sql');
