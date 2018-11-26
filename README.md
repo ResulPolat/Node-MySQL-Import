@@ -16,9 +16,6 @@ Unlike some other libraries that have been seen out there in the wild, this modu
 npm i node-mysql-import
 ```
 
-### HOW TO USE WITH ASAR PACKED APP
-Since asar packed app-directories are not natively approachable by the OS, we recommend copying the .sql file to the appdata directory and pass that location to the constructor
-
 ### EXAMPLE USAGE
 ```javascript
 const MySQLImporter = require('../lib/index.js');
@@ -39,3 +36,6 @@ test.init()
         console.dir(error);
     })
 ```
+
+### HOW TO USE WITH ASAR PACKED APP
+Since asar packed app-directories are not natively approachable by the OS, we recommend copying the .sql file to the appdata directory and pass that location to the constructor
