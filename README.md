@@ -21,7 +21,7 @@ Since asar packed app-directories are not natively approachable by the OS, we re
 
 ### EXAMPLE USAGE
 ```javascript
-const MySQLImporter = require('./index.js');
+const MySQLImporter = require('../lib/index.js');
 
 // setup
 var test = new MySQLImporter('localhost', 3306, 'root', 'password', 'database', 'test.sql');

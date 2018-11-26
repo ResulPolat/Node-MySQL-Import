@@ -1,10 +1,10 @@
 {
   "name": "node-mysql-import",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Makes it possible to import .sql files of any size with no hassle",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
