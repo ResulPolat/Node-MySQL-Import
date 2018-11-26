@@ -1,4 +1,4 @@
-# node-MySQL-importer
+# node-MySQL-import
 
 ### DESCRIPTION
 Makes it very easy to import .sql files of any size without a hassle.
