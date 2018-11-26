@@ -1,7 +1,6 @@
 # node-MySQL-importer
 
 ### DESCRIPTION
-
 Makes it very easy to import .sql files of any size without a hassle.
 
 ### HOW IT WORKS
@@ -13,10 +12,12 @@ Unlike some other libraries that have been seen out there in the wild, this modu
 - mac (uses 'mysql' command)
 
 ### HOW TO INSTALL
-
 ```
 npm i node-mysql-import
 ```
+
+### HOW TO USE WITH ASAR PACKED APP
+Since asar packed app-directories are not natively approachable by the OS, we recommend copying the .sql file to the appdata directory and pass that location to the constructor
 
 ### EXAMPLE USAGE
 ```javascript
