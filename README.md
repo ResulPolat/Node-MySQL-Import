@@ -18,7 +18,7 @@ npm i node-mysql-import
 
 ### EXAMPLE USAGE
 ```javascript
-const MySQLImporter = require('../lib/index.js');
+const MySQLImporter = require('node-mysql-import');
 
 // setup
 var test = new MySQLImporter('localhost', 3306, 'root', 'password', 'database', 'test.sql');
