@@ -1,6 +1,5 @@
 const MySQLImporter = require('../lib/index.js');
 
-
 // setup
 var test = new MySQLImporter('localhost', 3306, 'root', 'password', 'database', 'test.sql');
 
